@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -10,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SplashViewController" customModule="AppPatronesPabloPeragon" customModuleProvider="target">
             <connections>
+                <outlet property="splashActivityIndicator" destination="vqv-UU-ubQ" id="MiG-ff-7xf"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -18,23 +20,32 @@
             <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SOY EL SPLASH" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wYs-Hp-18V">
-                    <rect key="frame" x="134.33333333333334" y="415.66666666666669" width="124.66666666666666" height="21"/>
-                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <nil key="textColor"/>
-                    <nil key="highlightedColor"/>
-                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="fondo3" translatesAutoresizingMaskIntoConstraints="NO" id="Mw2-j2-hbC">
+                    <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                </imageView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="vqv-UU-ubQ">
+                    <rect key="frame" x="178" y="407.66666666666669" width="37" height="37"/>
+                    <color key="color" name="AccentColor"/>
+                </activityIndicatorView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
-                <constraint firstItem="wYs-Hp-18V" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="YXV-oL-ALe"/>
-                <constraint firstItem="wYs-Hp-18V" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="ahh-Pm-M2s"/>
+                <constraint firstItem="vqv-UU-ubQ" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="7W5-B7-1c9"/>
+                <constraint firstAttribute="bottom" secondItem="Mw2-j2-hbC" secondAttribute="bottom" id="FoM-dj-SEx"/>
+                <constraint firstItem="Mw2-j2-hbC" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="Icf-Ui-Pbs"/>
+                <constraint firstItem="vqv-UU-ubQ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="U6I-VE-7WB"/>
+                <constraint firstItem="Mw2-j2-hbC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="fCD-Ky-Maa"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Mw2-j2-hbC" secondAttribute="trailing" id="iIJ-vG-dEb"/>
             </constraints>
             <point key="canvasLocation" x="71" y="-11"/>
         </view>
     </objects>
     <resources>
+        <image name="fondo3" width="1080" height="1920"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
