@@ -55,6 +55,7 @@ extension SplashViewController {
                 self?.navigateToLogin()
             case .error:
                 print("Error Splash")
+                
             case .none:
                 print("None Splash")
             }

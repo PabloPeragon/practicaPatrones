@@ -76,12 +76,18 @@
 		6E61F7F02B603B8B008977E5 /* LoginStatusLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E61F7EF2B603B8B008977E5 /* LoginStatusLoad.swift */; };
 		6E61F7F12B603B8B008977E5 /* LoginStatusLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E61F7EF2B603B8B008977E5 /* LoginStatusLoad.swift */; };
 		6E61F7F22B603B8B008977E5 /* LoginStatusLoad.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E61F7EF2B603B8B008977E5 /* LoginStatusLoad.swift */; };
-		6EB139322B655E9D00CD7E5D /* heroDetalleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB139302B655E9D00CD7E5D /* heroDetalleViewController.swift */; };
-		6EB139332B655E9D00CD7E5D /* heroDetalleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB139302B655E9D00CD7E5D /* heroDetalleViewController.swift */; };
-		6EB139342B655E9D00CD7E5D /* heroDetalleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EB139302B655E9D00CD7E5D /* heroDetalleViewController.swift */; };
-		6EB139352B655E9D00CD7E5D /* heroDetalleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EB139312B655E9D00CD7E5D /* heroDetalleViewController.xib */; };
-		6EB139362B655E9D00CD7E5D /* heroDetalleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EB139312B655E9D00CD7E5D /* heroDetalleViewController.xib */; };
-		6EB139372B655E9D00CD7E5D /* heroDetalleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EB139312B655E9D00CD7E5D /* heroDetalleViewController.xib */; };
+		6E7FEDCB2B65983B00FE751D /* HeroDetalleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7FEDCA2B65983B00FE751D /* HeroDetalleModel.swift */; };
+		6E7FEDCC2B65983C00FE751D /* HeroDetalleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7FEDCA2B65983B00FE751D /* HeroDetalleModel.swift */; };
+		6E7FEDCD2B65983C00FE751D /* HeroDetalleModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E7FEDCA2B65983B00FE751D /* HeroDetalleModel.swift */; };
+		6EF50E5F2B663E3300B75A55 /* DetalleUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF50E5E2B663E3300B75A55 /* DetalleUseCase.swift */; };
+		6EF50E602B663E3300B75A55 /* DetalleUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF50E5E2B663E3300B75A55 /* DetalleUseCase.swift */; };
+		6EF50E612B663E3300B75A55 /* DetalleUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF50E5E2B663E3300B75A55 /* DetalleUseCase.swift */; };
+		6EF50E642B665EC200B75A55 /* DetalleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF50E622B665EC200B75A55 /* DetalleViewController.swift */; };
+		6EF50E652B665EC200B75A55 /* DetalleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF50E622B665EC200B75A55 /* DetalleViewController.swift */; };
+		6EF50E662B665EC200B75A55 /* DetalleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF50E622B665EC200B75A55 /* DetalleViewController.swift */; };
+		6EF50E672B665EC200B75A55 /* DetalleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EF50E632B665EC200B75A55 /* DetalleViewController.xib */; };
+		6EF50E682B665EC200B75A55 /* DetalleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EF50E632B665EC200B75A55 /* DetalleViewController.xib */; };
+		6EF50E692B665EC200B75A55 /* DetalleViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EF50E632B665EC200B75A55 /* DetalleViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -135,8 +141,10 @@
 		6E61F7E32B602CC3008977E5 /* LoginViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
 		6E61F7EB2B603976008977E5 /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		6E61F7EF2B603B8B008977E5 /* LoginStatusLoad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginStatusLoad.swift; sourceTree = "<group>"; };
-		6EB139302B655E9D00CD7E5D /* heroDetalleViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = heroDetalleViewController.swift; sourceTree = "<group>"; };
-		6EB139312B655E9D00CD7E5D /* heroDetalleViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = heroDetalleViewController.xib; sourceTree = "<group>"; };
+		6E7FEDCA2B65983B00FE751D /* HeroDetalleModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeroDetalleModel.swift; sourceTree = "<group>"; };
+		6EF50E5E2B663E3300B75A55 /* DetalleUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleUseCase.swift; sourceTree = "<group>"; };
+		6EF50E622B665EC200B75A55 /* DetalleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetalleViewController.swift; sourceTree = "<group>"; };
+		6EF50E632B665EC200B75A55 /* DetalleViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetalleViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -238,6 +246,7 @@
 				6E61F7952B6015C8008977E5 /* SceneDelegate.swift */,
 				6E61F79E2B6015CA008977E5 /* LaunchScreen.storyboard */,
 				6E61F7C32B601679008977E5 /* Assets.xcassets */,
+				6E511E942B65286D002AED34 /* Extensions */,
 				6E61F7C72B601742008977E5 /* Presentation */,
 				6E61F7C62B60172F008977E5 /* Domain */,
 				6E61F7C52B601718008977E5 /* Data */,
@@ -265,7 +274,6 @@
 		6E61F7C52B601718008977E5 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				6E511E942B65286D002AED34 /* Extensions */,
 				6E61F7CE2B6017FF008977E5 /* Repository */,
 				6E61F7CD2B6017F3008977E5 /* Network */,
 				6E61F7CC2B6017E8008977E5 /* Local */,
@@ -294,6 +302,7 @@
 		6E61F7C82B6017B9008977E5 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				6E7FEDC92B6597FD00FE751D /* Detalle */,
 				6E11177E2B64461400B53068 /* Home */,
 				6E61F7EA2B603905008977E5 /* login */,
 				6E61F7D82B60246E008977E5 /* Splash */,
@@ -317,6 +326,7 @@
 			children = (
 				6E5389CE2B616C2C005220FE /* LoginUseCase.swift */,
 				6E1117722B642BAD00B53068 /* HomeUseCase.swift */,
+				6EF50E5E2B663E3300B75A55 /* DetalleUseCase.swift */,
 			);
 			path = UseCases;
 			sourceTree = "<group>";
@@ -388,11 +398,19 @@
 			path = login;
 			sourceTree = "<group>";
 		};
+		6E7FEDC92B6597FD00FE751D /* Detalle */ = {
+			isa = PBXGroup;
+			children = (
+				6E7FEDCA2B65983B00FE751D /* HeroDetalleModel.swift */,
+			);
+			path = Detalle;
+			sourceTree = "<group>";
+		};
 		6EB1392B2B655E6800CD7E5D /* Detalle */ = {
 			isa = PBXGroup;
 			children = (
-				6EB139302B655E9D00CD7E5D /* heroDetalleViewController.swift */,
-				6EB139312B655E9D00CD7E5D /* heroDetalleViewController.xib */,
+				6EF50E622B665EC200B75A55 /* DetalleViewController.swift */,
+				6EF50E632B665EC200B75A55 /* DetalleViewController.xib */,
 			);
 			path = Detalle;
 			sourceTree = "<group>";
@@ -501,10 +519,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6EB139352B655E9D00CD7E5D /* heroDetalleViewController.xib in Resources */,
 				6E5389CD2B616678005220FE /* HomeTableViewController.xib in Resources */,
 				6E511E912B651AFE002AED34 /* characterTableViewCell.xib in Resources */,
 				6E61F7E72B602CC3008977E5 /* LoginViewController.xib in Resources */,
+				6EF50E672B665EC200B75A55 /* DetalleViewController.xib in Resources */,
 				6E61F7A02B6015CA008977E5 /* LaunchScreen.storyboard in Resources */,
 				6E61F7D52B6018D2008977E5 /* SplashViewController.xib in Resources */,
 				6E61F7C42B601679008977E5 /* Assets.xcassets in Resources */,
@@ -515,8 +533,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EF50E682B665EC200B75A55 /* DetalleViewController.xib in Resources */,
 				6E61F7E82B602CC3008977E5 /* LoginViewController.xib in Resources */,
-				6EB139362B655E9D00CD7E5D /* heroDetalleViewController.xib in Resources */,
 				6E511E922B651AFE002AED34 /* characterTableViewCell.xib in Resources */,
 				6E61F7D62B6018D2008977E5 /* SplashViewController.xib in Resources */,
 			);
@@ -526,8 +544,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EF50E692B665EC200B75A55 /* DetalleViewController.xib in Resources */,
 				6E61F7E92B602CC3008977E5 /* LoginViewController.xib in Resources */,
-				6EB139372B655E9D00CD7E5D /* heroDetalleViewController.xib in Resources */,
 				6E511E932B651AFE002AED34 /* characterTableViewCell.xib in Resources */,
 				6E61F7D72B6018D2008977E5 /* SplashViewController.xib in Resources */,
 			);
@@ -547,18 +565,20 @@
 				6E11177B2B64405500B53068 /* UserDefaultsHelper.swift in Sources */,
 				6E61F7942B6015C8008977E5 /* AppDelegate.swift in Sources */,
 				6E61F7962B6015C8008977E5 /* SceneDelegate.swift in Sources */,
+				6EF50E5F2B663E3300B75A55 /* DetalleUseCase.swift in Sources */,
 				6E61F7DA2B6024C4008977E5 /* SplashViewModel.swift in Sources */,
 				6E61F7F02B603B8B008977E5 /* LoginStatusLoad.swift in Sources */,
 				6E5389DC2B617026005220FE /* HTTPMethods.swift in Sources */,
 				6E5389E02B6170F1005220FE /* HTTPResponseCodes.swift in Sources */,
-				6EB139322B655E9D00CD7E5D /* heroDetalleViewController.swift in Sources */,
 				6E5389CC2B616678005220FE /* HomeTableViewController.swift in Sources */,
 				6E1117772B642CD100B53068 /* HeroModel.swift in Sources */,
 				6E1117732B642BAD00B53068 /* HomeUseCase.swift in Sources */,
+				6EF50E642B665EC200B75A55 /* DetalleViewController.swift in Sources */,
 				6E511E962B6528A4002AED34 /* UIImageView+Remote.swift in Sources */,
 				6E61F7DE2B602695008977E5 /* SplashStatusLoad.swift in Sources */,
 				6E61F7EC2B603976008977E5 /* LoginViewModel.swift in Sources */,
 				6E5389D82B616F99005220FE /* NetworkError.swift in Sources */,
+				6E7FEDCB2B65983B00FE751D /* HeroDetalleModel.swift in Sources */,
 				6E5389CF2B616C2C005220FE /* LoginUseCase.swift in Sources */,
 				6E5389D42B616EBA005220FE /* EndPoints.swift in Sources */,
 			);
@@ -568,6 +588,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6EF50E652B665EC200B75A55 /* DetalleViewController.swift in Sources */,
 				6E511E972B6528A4002AED34 /* UIImageView+Remote.swift in Sources */,
 				6E61F7DF2B602695008977E5 /* SplashStatusLoad.swift in Sources */,
 				6E1117782B642CD100B53068 /* HeroModel.swift in Sources */,
@@ -583,10 +604,11 @@
 				6E61F7D32B6018D2008977E5 /* SplashViewController.swift in Sources */,
 				6E5389D02B616C2C005220FE /* LoginUseCase.swift in Sources */,
 				6E5389D92B616F99005220FE /* NetworkError.swift in Sources */,
+				6E7FEDCC2B65983C00FE751D /* HeroDetalleModel.swift in Sources */,
 				6E5389DD2B617026005220FE /* HTTPMethods.swift in Sources */,
 				6E511E8F2B651AFE002AED34 /* characterTableViewCell.swift in Sources */,
 				6E1117742B642BAD00B53068 /* HomeUseCase.swift in Sources */,
-				6EB139332B655E9D00CD7E5D /* heroDetalleViewController.swift in Sources */,
+				6EF50E602B663E3300B75A55 /* DetalleUseCase.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -598,17 +620,19 @@
 				6E5389E22B6170F1005220FE /* HTTPResponseCodes.swift in Sources */,
 				6E61F7E62B602CC3008977E5 /* LoginViewController.swift in Sources */,
 				6E511E902B651AFE002AED34 /* characterTableViewCell.swift in Sources */,
+				6E7FEDCD2B65983C00FE751D /* HeroDetalleModel.swift in Sources */,
 				6E61F7D42B6018D2008977E5 /* SplashViewController.swift in Sources */,
 				6E61F7B72B6015CB008977E5 /* AppPatronesPabloPeragonUITestsLaunchTests.swift in Sources */,
 				6E61F7B52B6015CB008977E5 /* AppPatronesPabloPeragonUITests.swift in Sources */,
 				6E11177D2B64405500B53068 /* UserDefaultsHelper.swift in Sources */,
+				6EF50E612B663E3300B75A55 /* DetalleUseCase.swift in Sources */,
 				6E61F7DC2B6024C4008977E5 /* SplashViewModel.swift in Sources */,
 				6E61F7F22B603B8B008977E5 /* LoginStatusLoad.swift in Sources */,
 				6E5389D62B616EBA005220FE /* EndPoints.swift in Sources */,
 				6E1117752B642BAD00B53068 /* HomeUseCase.swift in Sources */,
 				6E1117792B642CD100B53068 /* HeroModel.swift in Sources */,
-				6EB139342B655E9D00CD7E5D /* heroDetalleViewController.swift in Sources */,
 				6E511E982B6528A4002AED34 /* UIImageView+Remote.swift in Sources */,
+				6EF50E662B665EC200B75A55 /* DetalleViewController.swift in Sources */,
 				6E61F7E02B602695008977E5 /* SplashStatusLoad.swift in Sources */,
 				6E5389DE2B617026005220FE /* HTTPMethods.swift in Sources */,
 				6E61F7EE2B603976008977E5 /* LoginViewModel.swift in Sources */,
