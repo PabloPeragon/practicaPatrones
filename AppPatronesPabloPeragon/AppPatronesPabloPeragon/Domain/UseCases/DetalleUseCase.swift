@@ -39,7 +39,7 @@ final class DetalleUseCase: DetalleUseCaseProtocol  {
             let name: String
         }
         
-        let heroRequest = HeroRequest(name: "HeroModel.name")
+        let heroRequest = HeroRequest(name: "hero.name")
         urlRequest.httpBody = try? JSONEncoder().encode(heroRequest)
         
         //TASK

@@ -32,6 +32,7 @@ class DetalleViewController: UIViewController {
     //Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        viewModel.loadDetalle()
         setObservers()
 
 
@@ -49,6 +50,9 @@ extension DetalleViewController {
             }
             ImagenHero.setImage(url: imageURL)
         }
+        
+        
+        
         
     }
 }

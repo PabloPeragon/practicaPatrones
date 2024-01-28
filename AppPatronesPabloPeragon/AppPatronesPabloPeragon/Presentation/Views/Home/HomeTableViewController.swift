@@ -55,10 +55,9 @@ final class HomeTableViewController: UIViewController {
 //MARK: - Extension Delegate
 extension HomeTableViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        //TODO: Navegar al detalle
-        let nextVM = HeroDetalleModel()
-        let nextVC = DetalleViewController(viewModel: nextVM)
-        self.navigationController?.setViewControllers([nextVC], animated: true)
+        //Navegar al detalle
+        let detalleViewController = DetalleViewController()
+        self.navigationController?.pushViewController(detalleViewController, animated: true)
         
     }
 }
