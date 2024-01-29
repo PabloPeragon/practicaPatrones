@@ -32,27 +32,43 @@ class DetalleViewController: UIViewController {
     //Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        viewModel.loadDetalle()
+        viewModel.loadHeros()
         setObservers()
-
-
     }
-}
-
-extension DetalleViewController {
     
     private func setObservers() {
-        func configuration(with hero: HeroModel) {
+        viewModel.modelStatusLoad = { [weak self] status in
+            switch status {
+            case .loading:
+                print("Detalle Loading")
+            case .loaded:
+                DispatchQueue.main.async {
+                    guard let hero = self?.viewModel.dataHeroe else {
+                        self?.viewModel.modelStatusLoad?(.error)
+                        return
+                    }
+                }
+            case .error:
+                print("Detalle error")
+            case .none:
+                print("Detalle None")
+            }
+            
+        }
+        
+        func configure(whith hero: HeroModel) {
             LabelHero.text = hero.name
             DescriptionHero.text = hero.description
+            
             guard let imageURL = URL(string: hero.photo) else {
                 return
             }
             ImagenHero.setImage(url: imageURL)
+        
         }
-        
-        
-        
-        
     }
 }
+
+
+
+
