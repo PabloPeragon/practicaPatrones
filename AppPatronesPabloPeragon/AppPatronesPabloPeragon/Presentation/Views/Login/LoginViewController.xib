@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -82,35 +81,27 @@
                     <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </view>
-                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" animating="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="4Qg-Ur-tP2">
-                    <rect key="frame" x="178" y="407.66666666666669" width="37" height="37"/>
-                    <color key="color" name="AccentColor"/>
-                </activityIndicatorView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstAttribute="trailing" secondItem="ReP-l8-UcW" secondAttribute="trailing" id="0pD-Ce-L1J"/>
                 <constraint firstItem="bmN-sl-2Zz" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="47G-gh-gyV"/>
-                <constraint firstItem="4Qg-Ur-tP2" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="7fr-fa-Rbn"/>
                 <constraint firstItem="zQL-gI-XUb" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="9pv-tM-g5w"/>
                 <constraint firstItem="BLk-UG-L71" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="GOU-W8-adO"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="zQL-gI-XUb" secondAttribute="trailing" constant="12" id="Jtd-xt-vta"/>
-                <constraint firstItem="4Qg-Ur-tP2" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="Knc-Mt-bLS"/>
                 <constraint firstItem="zQL-gI-XUb" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="12" id="Mp6-96-otk"/>
                 <constraint firstItem="bmN-sl-2Zz" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="O1T-iL-qyd"/>
                 <constraint firstItem="ReP-l8-UcW" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="Q9w-qz-qXe"/>
                 <constraint firstItem="BLk-UG-L71" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="RpV-1W-M1M"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="ncd-ux-bIr" secondAttribute="bottom" constant="50" id="SRx-zQ-7Sx"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="BLk-UG-L71" secondAttribute="trailing" id="TQq-dr-Wyo"/>
-                <constraint firstItem="4Qg-Ur-tP2" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Tgb-f5-fAA"/>
                 <constraint firstItem="ncd-ux-bIr" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="UlU-zd-nk6"/>
                 <constraint firstItem="ReP-l8-UcW" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="fmD-V8-qJt"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bmN-sl-2Zz" secondAttribute="trailing" constant="20" id="god-wc-oMd"/>
                 <constraint firstAttribute="bottom" secondItem="ReP-l8-UcW" secondAttribute="bottom" id="i7Z-dP-ezn"/>
                 <constraint firstItem="bmN-sl-2Zz" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="jMs-ZN-X0M"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="ncd-ux-bIr" secondAttribute="trailing" constant="20" id="jak-FW-fIN"/>
-                <constraint firstItem="4Qg-Ur-tP2" firstAttribute="centerY" secondItem="i5M-Pr-FkT" secondAttribute="centerY" id="o4k-JY-R01"/>
                 <constraint firstAttribute="bottom" secondItem="BLk-UG-L71" secondAttribute="bottom" id="ra5-V5-Q99"/>
                 <constraint firstItem="ncd-ux-bIr" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="tEa-Rq-tRq"/>
                 <constraint firstItem="zQL-gI-XUb" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="unw-6G-eOO"/>
@@ -120,17 +111,14 @@
     </objects>
     <resources>
         <image name="fondo3" width="1080" height="1920"/>
-        <namedColor name="AccentColor">
-            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
         <systemColor name="systemOrangeColor">
-            <color red="1" green="0.58431372549019611" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

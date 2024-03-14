@@ -15,7 +15,6 @@ final class SplashViewModel {
     func simulationLoadData(){
         //Variable estado --> ESTOY CARGANDO
         modelStatusLoad?(.loading)
-        
         DispatchQueue.main.asyncAfter(deadline: .now() + 3) {  [weak self] in
             //Variable estado --> YA ME CARGADO
             self?.modelStatusLoad?(.loaded)
