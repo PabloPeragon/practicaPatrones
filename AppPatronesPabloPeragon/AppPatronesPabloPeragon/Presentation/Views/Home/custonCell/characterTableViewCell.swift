@@ -12,14 +12,19 @@ class characterTableViewCell: UITableViewCell {
     @IBOutlet weak var characterImageView: UIImageView!
     @IBOutlet weak var characterName: UILabel!
     
-    //MARK: - Configure
-    func configure(with character: HeroModel ) {
-        characterName.text = character.name
-        
-        guard let imageURL = URL(string: character.photo) else {
-            return
-        }
-        characterImageView.setImage(url: imageURL)
+    func updateViews(hero: HeroModel) {
+        update(image: hero.photo)
+        update(title: hero.name)
     }
     
+    private func update(image: String?) {
+        guard let image = image else { return }
+        let url = URL(string: image)
+        guard let url = url else { return }
+        characterImageView.setImage(url: url)
+    }
+    
+    private func update(title: String?) {
+        characterName.text = title
+    }
 }

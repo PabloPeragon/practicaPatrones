@@ -18,13 +18,13 @@ final class HomeUseCase: HomeUseCaseProtocol  {
     func getHeroes(onSuccess: @escaping ([HeroModel]) -> Void, onError: @escaping (NetworkError) -> Void) {
         
         //Comprobar URL
-        guard let url = URL(string: "\(EndPoints.url.rawValue)\(EndPoints.allHeros.rawValue)") else {
+        guard let url = URL(string: "\(EndPoints.url.rawValue)\(EndPoints.heroesList.rawValue)") else {
             onError(.malformedURL)
             return
         }
         
         //Crear token
-        guard let token = UserDefaulsHelper.getToken() else {
+        guard let token = UserDefaultsHelper.getToken() else {
             onError(.tokenFormatError)
             return
         }
@@ -34,7 +34,7 @@ final class HomeUseCase: HomeUseCaseProtocol  {
         var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = HTTPMethods.post
         urlRequest.setValue("Bearer \(token)", forHTTPHeaderField: "Authorization")
-        urlRequest.setValue(HTTPMethods.contentType, forHTTPHeaderField: "Content-Type")
+        urlRequest.setValue(HTTPMethods.content, forHTTPHeaderField: "Content-Type")
         
         //Body
         struct HeroRequest: Encodable {

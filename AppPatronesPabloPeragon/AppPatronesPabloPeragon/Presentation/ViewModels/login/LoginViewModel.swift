@@ -12,11 +12,11 @@ final class LoginViewModel {
     //MARK: - binding con UI
     var loginViewState: ((LoginStatusLoad) -> Void)?
     
-    private let loginUseCase: LoginUseCaseProtocol
+    private let useCase: LoginUseCaseProtocol
     
     //MARK: - Init
-    init(loginUseCase: LoginUseCaseProtocol = LoginUseCase()) {
-        self.loginUseCase = loginUseCase
+    init(useCase: LoginUseCaseProtocol = LoginUseCase()) {
+        self.useCase = useCase
         
     }
     
@@ -53,31 +53,29 @@ final class LoginViewModel {
     }
     
     private func doLoginWith(email: String, password: String) {
-        loginUseCase.login(user: email, password: password) { [weak self] token in
+       useCase.login(user: email, password: password) { [weak self] token in
             DispatchQueue.main.async {
                 self?.loginViewState?(.loaded)
             }
             
-        } onError: { [weak self] networkError in
+        } onError: { error in
             DispatchQueue.main.async {
-                var errorMessage = "Error Desconocido"
-                switch networkError {
+                switch(error) {
                 case .malformedURL:
-                    errorMessage = "malformedURL"
+                    print("Mal formed URL")
                 case .dataFormatting:
-                    errorMessage = "dataFormatting"
+                    print("Data Formatting")
                 case .other:
-                    errorMessage = "other"
+                    print("Other")
                 case .noData:
-                    errorMessage = "noData"
+                    print("No Data")
                 case .errorCode(let error):
-                    errorMessage = "ErrorCode \(error?.description ?? "Unknown")"
+                    print("Error Code \(String(describing: error?.description))")
                 case .tokenFormatError:
-                    errorMessage = "tokenFormatError"
+                    print("Token Format Error")
                 case .decoding:
-                    errorMessage = "decoding"
+                    print("Decoding")
                 }
-                self?.loginViewState?(.errorNetwork(errorMessage))
             }
         }
     }

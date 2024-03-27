@@ -40,7 +40,7 @@ final class HomeTableViewController: UIViewController {
         homeViewModel.homeStatusLoad = { [weak self] status in
             switch status {
             case .loading:
-                print("Home Loadion")
+                print("Home Loading")
             case .loaded:
                 self?.tableViewOutlet.reloadData()
             case .error:
@@ -56,9 +56,9 @@ final class HomeTableViewController: UIViewController {
 extension HomeTableViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         //Navegar al detalle
-        let detalleViewController = DetalleViewController()
-        self.navigationController?.pushViewController(detalleViewController, animated: true)
-        
+        let netxVM = DetailViewModel(name: homeViewModel.dataHeroes[indexPath.row].name)
+        let nextVC = DetailVeiwController(viewModel: netxVM)
+        navigationController?.pushViewController(nextVC, animated: true)
     }
 }
 
@@ -71,10 +71,10 @@ extension HomeTableViewController: UITableViewDataSource {
     
     //Formato de la celda
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "characterCell", for: indexPath) as! characterTableViewCell
-        cell.configure(with: homeViewModel.dataHeroes[indexPath.row])
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "characterCell", for: indexPath) as? characterTableViewCell else {
+            return UITableViewCell()
+        }
+        cell.updateViews(hero: homeViewModel.dataHeroes[indexPath.row])
         return cell
     }
-
-    
 }

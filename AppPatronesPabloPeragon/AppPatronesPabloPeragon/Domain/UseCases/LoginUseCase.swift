@@ -70,7 +70,7 @@ final class LoginUseCase: LoginUseCaseProtocol {
                 onError(.tokenFormatError)
                 return
             }
-            UserDefaulsHelper.save(token: token)
+            UserDefaultsHelper.save(token: token)
             onSucces(token)
         }
         task.resume()

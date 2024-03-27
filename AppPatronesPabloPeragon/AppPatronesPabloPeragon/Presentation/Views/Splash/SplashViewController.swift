@@ -31,19 +31,6 @@ final class SplashViewController: UIViewController {
         viewModel.simulationLoadData()
 
     }
-}
-
-// MARK: - Extension -
-extension SplashViewController {
-    private func showLoading(show: Bool) {
-        switch show {
-        case true where !splashActivityIndicator.isAnimating:
-            splashActivityIndicator.startAnimating()
-        case false where splashActivityIndicator.isAnimating:
-            splashActivityIndicator.stopAnimating()
-        default : break
-        }
-    }
     
     private func setObservers() {
         viewModel.modelStatusLoad = { [weak self] status in
@@ -62,8 +49,21 @@ extension SplashViewController {
         }
     }
     
+    
+    private func showLoading(show: Bool) {
+        switch show {
+        case true where !splashActivityIndicator.isAnimating:
+            splashActivityIndicator.startAnimating()
+        case false where splashActivityIndicator.isAnimating:
+            splashActivityIndicator.stopAnimating()
+        default : break
+        }
+    }
+    
+
+    
     private func navigateToLogin() {
-        let nextVM = LoginViewModel(loginUseCase: LoginUseCase())
+        let nextVM = LoginViewModel(useCase: LoginUseCase())
         let nextVC = LoginViewController(viewModel: nextVM)
         navigationController?.setViewControllers([nextVC], animated: false)
     }

@@ -38,21 +38,13 @@ class LoginViewController: UIViewController {
     @IBAction func onLoginButtonTap(_ sender: Any) {
         viewModel.onLoginButton(email: emailTextField.text, password: passwordTextField.text)
     }
-}
-
-// MARK: - EXTENSION
-extension LoginViewController {
-    // Metodo para "escuchar" variable de estado del viewModel
+    
     private func setObservers() {
         viewModel.loginViewState = { [weak self] status in
-            switch status {
+            switch(status) {
                 
             case .loading(let isloading):
                 self?.loadingView.isHidden = !isloading
-                
-            case .loaded:
-                self?.loadingView.isHidden = true
-                self?.navigateToHome()
                 
             case .showErrorEmail(let error):
                 self?.errorEmail.text = error
@@ -62,9 +54,9 @@ extension LoginViewController {
                 self?.errorPassword.text = error
                 self?.errorPassword.isHidden = (error == nil || error?.isEmpty == true)
                 
-            case .errorNetwork(let errorMessage):
+            case .loaded:
                 self?.loadingView.isHidden = true
-                self?.showAlert(message: errorMessage)
+                self?.navigateToHome()
             }
         }
     }
@@ -73,13 +65,5 @@ extension LoginViewController {
     private func navigateToHome() {
         let nextVC = HomeTableViewController()
         navigationController?.setViewControllers([nextVC], animated: true)
-    }
-    
-    //MARK: - Alert
-    private func showAlert(message: String) {
-        let alertController = UIAlertController(title: "ERROR NETWORK", message: message, preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "Aceptar", style: .default, handler: nil)
-        alertController.addAction(okAction)
-        present(alertController, animated: true, completion: nil)
     }
 }

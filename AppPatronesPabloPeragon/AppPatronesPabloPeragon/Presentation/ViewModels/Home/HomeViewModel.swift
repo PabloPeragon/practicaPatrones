@@ -15,7 +15,7 @@ final class HomeViewModel {
     //caseUse(para conectarser con el caso de uso)
     let homeUseCase: HomeUseCaseProtocol
     
-    var dataHeroes: [HeroModel] = []
+    var dataHeroes: [HeroModel] = Array<HeroModel>()
     
     //init que necesita el caso de uso
     init(homeUseCase: HomeUseCaseProtocol = HomeUseCase()) {
@@ -31,7 +31,7 @@ final class HomeViewModel {
                 self?.dataHeroes = heroes
                 self?.homeStatusLoad?(.loaded)
             }
-        } onError: { [weak self] networkError in
+        } onError: { [weak self] error in
             DispatchQueue.main.async {
                 self?.homeStatusLoad?(.error)
                 
