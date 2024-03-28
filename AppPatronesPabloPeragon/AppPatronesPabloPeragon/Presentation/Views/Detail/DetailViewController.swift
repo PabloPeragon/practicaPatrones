@@ -1,35 +1,28 @@
 //
-//  DetalleViewController.swift
+//  DetailViewController.swift
 //  AppPatronesPabloPeragon
 //
-//  Created by Pablo Jesús Peragón Garrido on 28/1/24.
+//  Created by Pablo Jesús Peragón Garrido on 28/3/24.
 //
 
 import UIKit
 
-class DetailVeiwController: UIViewController {
+class DetailViewController: UIViewController {
+    @IBOutlet weak var ImageDetail: UIImageView!
+    @IBOutlet weak var NameDetail: UILabel!
+    @IBOutlet weak var DescriptionDetail: UITextView!
     
-    //IBOoutlet
-    
-    @IBOutlet weak var ImagenHero: UIImageView!
-    @IBOutlet weak var LabelHero: UILabel!
-    @IBOutlet weak var DescriptionHero: UITextView!
-    
-    //VeiwModel
     private var viewModel: DetailViewModel
     
-    //Init
     init(viewModel: DetailViewModel = DetailViewModel()) {
         self.viewModel = viewModel
         super.init(nibName: nil, bundle: nil)
-        }
-        
+    }
     
     required init?(coder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
     }
     
-    //Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
         viewModel.loadHero()
@@ -53,7 +46,7 @@ class DetailVeiwController: UIViewController {
     
     func updateViews() {
         update(image: viewModel.dataHeroe.photo)
-        update(title: viewModel.dataHeroe.name)
+        update(name: viewModel.dataHeroe.name)
         update(description: viewModel.dataHeroe.description)
     }
     
@@ -61,19 +54,14 @@ class DetailVeiwController: UIViewController {
         guard let image = image else { return }
         let url = URL(string: image)
         guard let url = url else { return }
-        ImagenHero.setImage(url: url)
+        ImageDetail.setImage(url: url)
     }
     
-    private func update(title: String?) {
-        LabelHero.text = title ?? "No hay nombre"
+    private func update(name: String?) {
+        NameDetail.text = name ?? "No hay nombre"
     }
     
     private func update(description: String?) {
-        DescriptionHero.text = description ?? "No hay descripción"
+        DescriptionDetail.text = description ?? "No hay text"
     }
-    
 }
-
-
-
-

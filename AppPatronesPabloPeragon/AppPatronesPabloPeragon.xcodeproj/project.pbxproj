@@ -42,6 +42,8 @@
 		6E5389E02B6170F1005220FE /* HTTPResponseCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5389DF2B6170F1005220FE /* HTTPResponseCodes.swift */; };
 		6E5389E12B6170F1005220FE /* HTTPResponseCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5389DF2B6170F1005220FE /* HTTPResponseCodes.swift */; };
 		6E5389E22B6170F1005220FE /* HTTPResponseCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E5389DF2B6170F1005220FE /* HTTPResponseCodes.swift */; };
+		6E59818F2BB5FEFB00A6BC98 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E59818D2BB5FEFB00A6BC98 /* DetailViewController.swift */; };
+		6E5981902BB5FEFB00A6BC98 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6E59818E2BB5FEFB00A6BC98 /* DetailViewController.xib */; };
 		6E61F7942B6015C8008977E5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E61F7932B6015C8008977E5 /* AppDelegate.swift */; };
 		6E61F7962B6015C8008977E5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6E61F7952B6015C8008977E5 /* SceneDelegate.swift */; };
 		6E61F7A02B6015CA008977E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6E61F79E2B6015CA008977E5 /* LaunchScreen.storyboard */; };
@@ -80,12 +82,6 @@
 		6EF50E5F2B663E3300B75A55 /* DetailUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF50E5E2B663E3300B75A55 /* DetailUseCase.swift */; };
 		6EF50E602B663E3300B75A55 /* DetailUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF50E5E2B663E3300B75A55 /* DetailUseCase.swift */; };
 		6EF50E612B663E3300B75A55 /* DetailUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF50E5E2B663E3300B75A55 /* DetailUseCase.swift */; };
-		6EF50E642B665EC200B75A55 /* DetailVeiwController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF50E622B665EC200B75A55 /* DetailVeiwController.swift */; };
-		6EF50E652B665EC200B75A55 /* DetailVeiwController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF50E622B665EC200B75A55 /* DetailVeiwController.swift */; };
-		6EF50E662B665EC200B75A55 /* DetailVeiwController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EF50E622B665EC200B75A55 /* DetailVeiwController.swift */; };
-		6EF50E672B665EC200B75A55 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EF50E632B665EC200B75A55 /* DetailViewController.xib */; };
-		6EF50E682B665EC200B75A55 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EF50E632B665EC200B75A55 /* DetailViewController.xib */; };
-		6EF50E692B665EC200B75A55 /* DetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6EF50E632B665EC200B75A55 /* DetailViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -119,6 +115,8 @@
 		6E5389D72B616F99005220FE /* NetworkError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkError.swift; sourceTree = "<group>"; };
 		6E5389DB2B617026005220FE /* HTTPMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethods.swift; sourceTree = "<group>"; };
 		6E5389DF2B6170F1005220FE /* HTTPResponseCodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPResponseCodes.swift; sourceTree = "<group>"; };
+		6E59818D2BB5FEFB00A6BC98 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		6E59818E2BB5FEFB00A6BC98 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 		6E61F7902B6015C8008977E5 /* AppPatronesPabloPeragon.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppPatronesPabloPeragon.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6E61F7932B6015C8008977E5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6E61F7952B6015C8008977E5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -141,8 +139,6 @@
 		6E7FEDCA2B65983B00FE751D /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		6ED926492BB40E6500AB5792 /* extension+UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "extension+UIImageView.swift"; sourceTree = "<group>"; };
 		6EF50E5E2B663E3300B75A55 /* DetailUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailUseCase.swift; sourceTree = "<group>"; };
-		6EF50E622B665EC200B75A55 /* DetailVeiwController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVeiwController.swift; sourceTree = "<group>"; };
-		6EF50E632B665EC200B75A55 /* DetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DetailViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -399,8 +395,8 @@
 		6EB1392B2B655E6800CD7E5D /* Detail */ = {
 			isa = PBXGroup;
 			children = (
-				6EF50E622B665EC200B75A55 /* DetailVeiwController.swift */,
-				6EF50E632B665EC200B75A55 /* DetailViewController.xib */,
+				6E59818D2BB5FEFB00A6BC98 /* DetailViewController.swift */,
+				6E59818E2BB5FEFB00A6BC98 /* DetailViewController.xib */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -519,8 +515,8 @@
 			files = (
 				6E5389CD2B616678005220FE /* HomeTableViewController.xib in Resources */,
 				6E511E912B651AFE002AED34 /* characterTableViewCell.xib in Resources */,
+				6E5981902BB5FEFB00A6BC98 /* DetailViewController.xib in Resources */,
 				6E61F7E72B602CC3008977E5 /* LoginViewController.xib in Resources */,
-				6EF50E672B665EC200B75A55 /* DetailViewController.xib in Resources */,
 				6E61F7A02B6015CA008977E5 /* LaunchScreen.storyboard in Resources */,
 				6E61F7D52B6018D2008977E5 /* SplashViewController.xib in Resources */,
 				6E61F7C42B601679008977E5 /* Assets.xcassets in Resources */,
@@ -531,7 +527,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6EF50E682B665EC200B75A55 /* DetailViewController.xib in Resources */,
 				6E61F7E82B602CC3008977E5 /* LoginViewController.xib in Resources */,
 				6E511E922B651AFE002AED34 /* characterTableViewCell.xib in Resources */,
 				6E61F7D62B6018D2008977E5 /* SplashViewController.xib in Resources */,
@@ -542,7 +537,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6EF50E692B665EC200B75A55 /* DetailViewController.xib in Resources */,
 				6E61F7E92B602CC3008977E5 /* LoginViewController.xib in Resources */,
 				6E511E932B651AFE002AED34 /* characterTableViewCell.xib in Resources */,
 				6E61F7D72B6018D2008977E5 /* SplashViewController.xib in Resources */,
@@ -558,6 +552,7 @@
 			files = (
 				6E61F7E42B602CC3008977E5 /* LoginViewController.swift in Sources */,
 				6E511E8E2B651AFE002AED34 /* characterTableViewCell.swift in Sources */,
+				6E59818F2BB5FEFB00A6BC98 /* DetailViewController.swift in Sources */,
 				6E1117802B64465000B53068 /* HomeViewModel.swift in Sources */,
 				6E61F7D22B6018D2008977E5 /* SplashViewController.swift in Sources */,
 				6E11177B2B64405500B53068 /* UserDefaultsHelper.swift in Sources */,
@@ -571,7 +566,6 @@
 				6E5389CC2B616678005220FE /* HomeTableViewController.swift in Sources */,
 				6E1117772B642CD100B53068 /* HeroModel.swift in Sources */,
 				6E1117732B642BAD00B53068 /* HomeUseCase.swift in Sources */,
-				6EF50E642B665EC200B75A55 /* DetailVeiwController.swift in Sources */,
 				6E61F7DE2B602695008977E5 /* SplashStatusLoad.swift in Sources */,
 				6ED9264A2BB40E6500AB5792 /* extension+UIImageView.swift in Sources */,
 				6E61F7EC2B603976008977E5 /* LoginViewModel.swift in Sources */,
@@ -586,7 +580,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6EF50E652B665EC200B75A55 /* DetailVeiwController.swift in Sources */,
 				6E61F7DF2B602695008977E5 /* SplashStatusLoad.swift in Sources */,
 				6E1117782B642CD100B53068 /* HeroModel.swift in Sources */,
 				6E5389D52B616EBA005220FE /* EndPoints.swift in Sources */,
@@ -628,7 +621,6 @@
 				6E5389D62B616EBA005220FE /* EndPoints.swift in Sources */,
 				6E1117752B642BAD00B53068 /* HomeUseCase.swift in Sources */,
 				6E1117792B642CD100B53068 /* HeroModel.swift in Sources */,
-				6EF50E662B665EC200B75A55 /* DetailVeiwController.swift in Sources */,
 				6E61F7E02B602695008977E5 /* SplashStatusLoad.swift in Sources */,
 				6E5389DE2B617026005220FE /* HTTPMethods.swift in Sources */,
 				6E61F7EE2B603976008977E5 /* LoginViewModel.swift in Sources */,

@@ -57,7 +57,7 @@ extension HomeTableViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         //Navegar al detalle
         let netxVM = DetailViewModel(name: homeViewModel.dataHeroes[indexPath.row].name)
-        let nextVC = DetailVeiwController(viewModel: netxVM)
+        let nextVC = DetailViewController(viewModel: netxVM)
         navigationController?.pushViewController(nextVC, animated: true)
     }
 }
